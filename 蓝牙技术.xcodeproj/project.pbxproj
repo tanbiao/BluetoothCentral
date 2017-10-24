@@ -15,6 +15,8 @@
 		A476AF1E1F983FD300942126 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A476AF1C1F983FD300942126 /* LaunchScreen.storyboard */; };
 		A476AF291F983FD300942126 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A476AF281F983FD300942126 /* ____Tests.m */; };
 		A476AF341F983FD300942126 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A476AF331F983FD300942126 /* ____UITests.m */; };
+		A476AF441F9840A900942126 /* CoreBluetoothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A476AF421F9840A900942126 /* CoreBluetoothViewController.m */; };
+		A476AF451F9840A900942126 /* CoreBluetoothViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A476AF431F9840A900942126 /* CoreBluetoothViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		A476AF2F1F983FD300942126 /* 蓝牙技术UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "蓝牙技术UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A476AF331F983FD300942126 /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		A476AF351F983FD300942126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A476AF411F9840A900942126 /* CoreBluetoothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreBluetoothViewController.h; sourceTree = "<group>"; };
+		A476AF421F9840A900942126 /* CoreBluetoothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreBluetoothViewController.m; sourceTree = "<group>"; };
+		A476AF431F9840A900942126 /* CoreBluetoothViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreBluetoothViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,9 @@
 		A476AF0D1F983FD300942126 /* 蓝牙技术 */ = {
 			isa = PBXGroup;
 			children = (
+				A476AF411F9840A900942126 /* CoreBluetoothViewController.h */,
+				A476AF421F9840A900942126 /* CoreBluetoothViewController.m */,
+				A476AF431F9840A900942126 /* CoreBluetoothViewController.xib */,
 				A476AF111F983FD300942126 /* AppDelegate.h */,
 				A476AF121F983FD300942126 /* AppDelegate.m */,
 				A476AF141F983FD300942126 /* ViewController.h */,
@@ -207,6 +215,7 @@
 				TargetAttributes = {
 					A476AF0A1F983FD300942126 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = W8ZBWMZ89E;
 						ProvisioningStyle = Automatic;
 					};
 					A476AF231F983FD300942126 = {
@@ -248,6 +257,7 @@
 			files = (
 				A476AF1E1F983FD300942126 /* LaunchScreen.storyboard in Resources */,
 				A476AF1B1F983FD300942126 /* Assets.xcassets in Resources */,
+				A476AF451F9840A900942126 /* CoreBluetoothViewController.xib in Resources */,
 				A476AF191F983FD300942126 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +285,7 @@
 			files = (
 				A476AF161F983FD300942126 /* ViewController.m in Sources */,
 				A476AF131F983FD300942126 /* AppDelegate.m in Sources */,
+				A476AF441F9840A900942126 /* CoreBluetoothViewController.m in Sources */,
 				A476AF101F983FD300942126 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,10 +437,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = W8ZBWMZ89E;
 				INFOPLIST_FILE = "蓝牙技术/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lewwei.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -437,10 +451,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = W8ZBWMZ89E;
 				INFOPLIST_FILE = "蓝牙技术/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lewwei.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -509,6 +526,7 @@
 				A476AF3A1F983FD300942126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A476AF3B1F983FD300942126 /* Build configuration list for PBXNativeTarget "蓝牙技术Tests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +535,7 @@
 				A476AF3D1F983FD300942126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A476AF3E1F983FD300942126 /* Build configuration list for PBXNativeTarget "蓝牙技术UITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +544,7 @@
 				A476AF401F983FD300942126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
